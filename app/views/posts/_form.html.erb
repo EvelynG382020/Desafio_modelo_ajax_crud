@@ -1,0 +1,17 @@
+<%= form_with model: post, remote: true do |form| %>
+
+  <div class="row">
+    <div class="col">
+      <%= form.text_field :title, placeholder: :title %>
+    </div>
+
+    <div class="col">
+      <%= form.text_field :content, placeholder: :content %>
+    </div>
+
+    <div class="col">
+      <%= form.submit data: { disable_with: 'Submiting...' } %>
+    </div>
+  </div>
+
+<% end %>

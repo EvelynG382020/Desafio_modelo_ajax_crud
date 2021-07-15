@@ -1,0 +1,10 @@
+post_table = document.getElementById('myPost')
+while (post_table.firstChild) {
+    post_table.removeChild(post_table.firstChild);
+}
+
+<% unless @search.nil? %>
+    <% @search.each do |found| %>
+        post_table.insertAdjacentHTML("beforeend","<%= escape_javascript render "posts/post", post: found %>")
+    <% end %>
+<% end %>

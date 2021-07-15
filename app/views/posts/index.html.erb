@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Posts</h1><%= render 'posts/form_search' %>
+
+<div class="row">
+  <div class="col">
+    <%= render 'posts/form', post: @post %>
+  </div>
+  <div class="col" id="myForm">
+  </div>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody id="myPost">
+    <%= render @posts %>
+  </tbody>
+</table>
+
+
+

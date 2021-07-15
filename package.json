@@ -1,0 +1,7 @@
+{
+  "name": "desafio_modelo",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
